@@ -5,4 +5,5 @@ This repository contains work completed during Spring 2020 in Dr. Murray's DIG46
 The *ice* folder contains in-class exercises. 
 
 ## About Me
-This should be replaced.
+Jacob Lodes: https://www.linkedin.com/in/jacob-l-028015117/
+I am seeking a web development position.
