@@ -1,0 +1,25 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 2em auto;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0.25em;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.card .answer,
+.card .question {
+    transition-duration: 0s;
+}
+
+.card[data-side="1"] .answer,
+.card[data-side="1"],
+.card[data-side="1"] .title {
+    transform: rotate3d(0, 1, 0, -180deg);    
+}
+
+.card[data-side="0"] .answer,
+.card[data-side="1"] .question {
+    display: none;
+}
