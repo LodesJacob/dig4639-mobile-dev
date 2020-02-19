@@ -18,6 +18,7 @@ class Pet {
     return 'I make this sound: '
   }
 
+<<<<<<< HEAD
     getIdentity = () => {
       console.log(this)
     }
@@ -26,6 +27,16 @@ class Pet {
     getSum = (a, b) => {
       return a + b
     }
+=======
+  getIdentity = () => {
+    console.log(this)
+  }
+
+  // getSum = (a,b) => a + b
+  getSum = (a, b) => {
+    return a + b
+  }
+>>>>>>> fe277fcee38e1b953a813f52fa2d0a9fceacf0f6
 }
 
 class Cat extends Pet {
