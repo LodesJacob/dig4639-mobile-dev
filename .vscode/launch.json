@@ -29,8 +29,8 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/labs/1/index.js",
+            "name": "Launch W8 Program",
+            "program": "${workspaceFolder}/demo/w8a/index.js",
             "skipFiles": [
                 "<node_internals>/**"
             ]
