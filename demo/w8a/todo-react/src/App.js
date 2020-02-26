@@ -2,8 +2,14 @@ import React from 'react';
 import './App.css';
 import todoList from './todoList.json';
 
-function TodoItem(props) {
-  return <p className='card'>{props.content}<input type="button" value="remove" onClick={() => console.log(props)} /></p>
+// function TodoItem(props) {
+//   return <p className='card'>{props.content}<input type="button" value="remove" onClick={() => this.props.removeTask(this.props.id)} /></p>
+// }
+
+class TodoItem extends React.Component {
+  render() {
+    return <p className="card">{this.props.content}<input type="button" value="x" onClick={() => this.props.removeTask(this.props.id)}/></p>
+  }
 }
 
 class App extends React.Component {
@@ -28,8 +34,14 @@ class App extends React.Component {
       this.setState({todoList:currentList})
     }
   }
-  removeTask(key) {
-    let newList = this.state.todoList.filter((task) => (task.key !== key))
+  removeTask(taskID) {
+    // let newList = this.state.todoList.filter((task) => (task.key !== key))
+    // this.setState({todoList:newList})
+    console.log(this.refs.taskContent.value)
+    console.log(taskID)
+    console.log(this.state.todoList[0].id)
+    let newList = this.state.todoList.filter((task)=>(task.id !== taskID))
+    this.setState({todoList:newList})
   }
   render() {
     return (
@@ -48,7 +60,7 @@ class App extends React.Component {
         <label htmlFor="showOnlyUncompletedTasks"> Show only uncompleted tasks</label>
       </div>
       {(this.state.showOnlyUncompletedTasks ? this.state.todoList.filter((v) => !v.completed) : this.state.todoList).map(
-        (v, i) => <TodoItem priority={v.priority} key={i}
+        (v, i) => <TodoItem priority={v.priority} key={i} id={i}
         content={v.content} completed={v.completed}/>)}
     </>
     )
