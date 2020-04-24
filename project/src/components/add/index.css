@@ -1,0 +1,10 @@
+.add {
+    box-shadow: none;
+    border: 1px solid gainsboro;
+}
+
+.add input[type="submit"] {
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+}

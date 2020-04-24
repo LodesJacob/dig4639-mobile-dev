@@ -1,0 +1,21 @@
+.contact {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin: 0.5em;
+    padding: 1.5em;
+}
+
+.contact * {
+    margin: 0;
+}
+
+.contact .index {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+}
+
+.contact .index::before {
+    content: "#"
+}

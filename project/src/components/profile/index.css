@@ -1,0 +1,11 @@
+.profile {
+    box-shadow:none;
+}
+
+.profile * {
+    margin: 0;
+}
+
+.profile h2 {
+    font-size: 3em;
+}

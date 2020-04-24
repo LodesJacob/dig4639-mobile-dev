@@ -1,0 +1,21 @@
+.card {
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  margin: 0.5em 0;
+}
+
+.wrap {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
