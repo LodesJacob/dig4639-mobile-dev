@@ -62,7 +62,7 @@ class App extends React.Component {
   render() {
     return(
       <>
-        <div class="wrap">
+        <div className="wrap">
           <Profile              
                   title={'Profile'}
                   name={this.state.profile.name}
